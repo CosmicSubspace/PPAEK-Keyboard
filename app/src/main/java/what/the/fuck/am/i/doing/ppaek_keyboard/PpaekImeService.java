@@ -8,8 +8,7 @@ import android.view.View;
 import android.view.inputmethod.InputConnection;
 import android.widget.Button;
 
-public class PpaekImeService extends InputMethodService
-        implements View.OnClickListener, View.OnTouchListener {
+public class PpaekImeService extends InputMethodService implements View.OnClickListener, View.OnTouchListener {
 
     private static final String LOG_TAG = "PPAEK";
 
@@ -24,7 +23,6 @@ public class PpaekImeService extends InputMethodService
     Button prevBtn,nextBtn;
 
     private int repeats = 0;
-
 
     @Override
     public View onCreateInputView() {
@@ -52,13 +50,11 @@ public class PpaekImeService extends InputMethodService
         enterBtn = (Button) v.findViewById(R.id.key_end);
         enterBtn.setOnClickListener(this);
 
-
         return v;
     }
 
     public void ppaek() {
         InputConnection ic = getCurrentInputConnection();
-
 
         if (repeats == 0) {
             ic.setComposingText(start, 1);
@@ -69,7 +65,6 @@ public class PpaekImeService extends InputMethodService
             }
             sb.append(end);
             ic.setComposingText(sb.toString(), 1);
-
         }
         repeats++;
     }
@@ -86,7 +81,6 @@ public class PpaekImeService extends InputMethodService
             }
             sb.append(end);
             ic.commitText(sb.toString(), 1);
-
         }
         repeats = 0;
     }
