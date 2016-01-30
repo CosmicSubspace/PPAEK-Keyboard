@@ -61,7 +61,7 @@
         android:layout_toLeftOf="@+id/next"
         android:layout_above="@+id/container_bottom"
         android:layout_alignParentTop="false"
-        android:textSize="48sp"
+        android:textSize="42dp"
         android:textStyle="bold"
         android:layout_below="@+id/container_top" />
 
