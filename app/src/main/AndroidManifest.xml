@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="what.the.fuck.am.i.doing.ppaek_keyboard">
+<application>
+    <!-- Declares the input method service -->
+    <service android:name=".PpaekImeService"
+        android:label="빼액"
+        android:permission="android.permission.BIND_INPUT_METHOD">
+        <intent-filter>
+            <action android:name="android.view.InputMethod" />
+        </intent-filter>
+        <meta-data android:name="android.view.im"
+            android:resource="@xml/method" />
+    </service>
+</application>
+</manifest>

@@ -1,0 +1,19 @@
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10%p"
+    android:horizontalGap="0px"
+    android:verticalGap="0px"
+    android:keyHeight="60dp"
+    >
+    <Row
+        android:keyHeight="160dp">
+        <Key android:codes="48764" android:keyLabel="빼액" android:keyTextSize="120dp" android:keyWidth="100%p" android:isRepeatable="true"/>
+    </Row>
+
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="-5" android:keyLabel="DEL" android:keyWidth="20%p" android:isRepeatable="true" android:keyEdgeFlags="left"/>
+
+        <Key android:codes="32" android:keyLabel="SPACE" android:keyWidth="60%p" android:isRepeatable="true"/>
+
+        <Key android:codes="-4" android:keyLabel="DONE" android:keyWidth="20%p" android:keyEdgeFlags="right"/>
+    </Row>
+</Keyboard>
