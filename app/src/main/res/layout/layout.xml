@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#EEEEEE">
 
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/container_top">
+        android:id="@+id/container_top"
+        android:layout_alignParentTop="true">
         <!--
                 <Button
                     android:layout_width="wrap_content"
@@ -31,7 +33,7 @@
                     android:layout_weight="1" />
                     -->
     </LinearLayout>
-
+<!--
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
@@ -41,41 +43,45 @@
         android:layout_below="@+id/container_top">
 
         <Button
+            style="@style/button"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:text="\?"
             android:id="@+id/key_q" />
         <Button
+            style="@style/button"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:text="!"
             android:id="@+id/key_e" />
     </LinearLayout>
-
+-->
     <Button
+        style="@style/button"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:text="빼애액"
         android:id="@+id/key_ppaek"
         android:layout_toRightOf="@+id/prev"
         android:layout_toLeftOf="@+id/next"
-        android:layout_above="@+id/container_bottom"
         android:layout_alignParentTop="false"
         android:textSize="42dp"
-        android:textStyle="bold"
-        android:layout_below="@+id/container_top" />
+        android:layout_below="@+id/container_top"
+        android:textStyle="bold" />
 
     <Button
+        style="@style/button"
         android:layout_width="48dp"
         android:layout_height="wrap_content"
         android:text="▶"
         android:id="@+id/next"
-        android:layout_toLeftOf="@+id/container_right"
         android:layout_above="@+id/container_bottom"
         android:layout_alignParentTop="false"
         android:textStyle="bold"
-        android:layout_below="@+id/container_top" />
+        android:layout_below="@+id/container_top"
+        android:layout_alignParentRight="true" />
     <Button
+        style="@style/button"
         android:layout_width="48dp"
         android:layout_height="wrap_content"
         android:text="◀"
@@ -84,8 +90,8 @@
         android:layout_alignParentTop="false"
         android:textStyle="bold"
         android:layout_below="@+id/container_top"
-        android:layout_toRightOf="@+id/container_left" />
-
+        android:layout_alignParentLeft="true" />
+<!--
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
@@ -95,25 +101,28 @@
         android:layout_below="@+id/container_top">
 
         <Button
+            style="@style/button"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:text="."
             android:id="@+id/key_d" />
         <Button
+            style="@style/button"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:text=","
             android:id="@+id/key_c" />
     </LinearLayout>
-
+-->
     <RelativeLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/container_bottom"
-        android:layout_below="@+id/container_left">
+        android:layout_below="@+id/key_ppaek">
 
         <Button
+            style="@style/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="DELETE"
@@ -121,6 +130,7 @@
             android:layout_alignParentLeft="true" />
 
         <Button
+            style="@style/button"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text=""
@@ -129,6 +139,7 @@
             android:layout_toLeftOf="@+id/key_end" />
 
         <Button
+            style="@style/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ENTER"

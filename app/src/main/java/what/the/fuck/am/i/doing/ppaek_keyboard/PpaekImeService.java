@@ -29,6 +29,7 @@ public class PpaekImeService extends InputMethodService implements View.OnClickL
         v = getLayoutInflater().inflate(R.layout.layout, null);
         mainBtn = (Button) v.findViewById(R.id.key_ppaek);
         mainBtn.setOnTouchListener(this);
+        /*
         qBtn = (Button) v.findViewById(R.id.key_q);
         qBtn.setOnClickListener(this);
         cBtn = (Button) v.findViewById(R.id.key_c);
@@ -36,7 +37,7 @@ public class PpaekImeService extends InputMethodService implements View.OnClickL
         eBtn = (Button) v.findViewById(R.id.key_e);
         eBtn.setOnClickListener(this);
         dBtn = (Button) v.findViewById(R.id.key_d);
-        dBtn.setOnClickListener(this);
+        dBtn.setOnClickListener(this);*/
         delBtn = (Button) v.findViewById(R.id.key_del);
         delBtn.setOnTouchListener(this);
 
@@ -109,6 +110,7 @@ public class PpaekImeService extends InputMethodService implements View.OnClickL
     public void onClick(View v) {
         InputConnection ic = getCurrentInputConnection();
         int id = v.getId();
+        /*
         if (id == R.id.key_e) { //!
             ic.commitText("!", 1);
         } else if (id == R.id.key_q) { //?
@@ -117,7 +119,7 @@ public class PpaekImeService extends InputMethodService implements View.OnClickL
             ic.commitText(".", 1);
         } else if (id == R.id.key_c) { //,
             ic.commitText(",", 1);
-        } else if (id == R.id.key_del) { //!
+        } else */if (id == R.id.key_del) { //!
 
         } else if (id == R.id.key_space) { //!
             ic.commitText(" ", 1);

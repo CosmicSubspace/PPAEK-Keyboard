@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="what.the.fuck.am.i.doing.ppaek_keyboard">
-<application>
+<application android:icon="@mipmap/ic_launcher" android:label="@string/app_name">
     <!-- Declares the input method service -->
     <service android:name=".PpaekImeService"
         android:label="빼액"
